@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>My Order</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="order-section">
+            <div class="container">
+                <div class="slider" style="background-image: url(src/img/order-section-bg.png)">
+                    <div class="slider__holder">
+                        <div class="slider__img">
+                            <div class="slider__img-holder">
+                                <img class="slider__logo" src="src/img/brand-logo.png" alt="">
+                                <img class="slider__product-img" src="src/img/item-img.png" alt="">
+                            </div>
+                            <ul class="slider__bullets">
+                                <li class="slider__bullets-item">
+                                    <span class="slider__bullets-icon slider__bullets-icon_purple"></span>
+                                </li>
+                                <li class="slider__bullets-item">
+                                    <span class="slider__bullets-icon slider__bullets-icon_white"></span>
+                                </li>
+                                <li class="slider__bullets-item">
+                                    <span class="slider__bullets-icon slider__bullets-icon_red"></span>
+                                </li>
+                                <li class="slider__bullets-item">
+                                    <span class="slider__bullets-icon slider__bullets-icon_blue"></span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="slider__form-holder">
+                            <form action="#" class="slider__form">
+                                <div class="slider__title-holder">
+                                    <h1 class="slider__title">Nike SB Stefan Janoski Max</h1>
+                                    <span class="slider__subtitle">Unisex Skateboarding Shoe</span>
+                                </div>
+                                <div class="slider__rate">
+                                    <span class="slider__rate-mark slider__rate-mark_yellow">★</span>
+                                    <span class="slider__rate-mark slider__rate-mark_yellow">★</span>
+                                    <span class="slider__rate-mark slider__rate-mark_yellow">★</span>
+                                    <span class="slider__rate-mark">★</span>
+                                    <span class="slider__rate-mark">★</span>
+                                </div>
+                                <div class="slider__input-holder">
+                                    <select name="size" id="size" class="slider__input slider__input_size">
+                                        <option value="0" selected>Size</option>
+                                        <option value="1">40</option>
+                                        <option value="2">41</option>
+                                        <option value="3">42</option>
+                                        <option value="4">43</option>
+                                        <option value="5">45</option>
+                                    </select>
+                                    <span class="arrow"></span>
+                                </div>
+                                <div class="slider__input-holder">
+                                    <select name="qty" id="qty" class="slider__input slider__input_qty">
+                                        <option value="0" selected>Qty</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <span class="arrow"></span>
+                                </div>
+
+                                <div class="slider__button-holder">
+                                    <button class="btn btn_blue" type="#">Add to cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="rate">
+            <input class="rate__input" type="radio" name="1-star" value="1" id="1-stars">
+            <label for="1-stars" class="rate__label"></label>
+            <input class="rate__input" type="radio" name="2-star" value="2" id="2-stars">
+            <label for="2-stars" class="rate__label"></label>
+            <input class="rate__input" type="radio" name="3-star" value="3" id="3-stars">
+            <label for="3-stars" class="rate__label"></label>
+            <input class="rate__input" type="radio" name="4-star" value="4" id="4-stars">
+            <label for="4-stars" class="rate__label"></label>
+            <input class="rate__input" type="radio" name="5-star" value="5" id="5-stars">
+            <label for="5-stars" class="rate__label"></label>
+        </div>
+    </main>
+</body>
+
+</html>

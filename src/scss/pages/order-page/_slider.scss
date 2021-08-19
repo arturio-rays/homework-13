@@ -1,0 +1,181 @@
+.slider {
+    max-width: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 109px 51px 100px 63px;
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $dark-blue;
+        box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+        border-radius: 9px;
+        padding: 21px;
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__img-holder {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 65px;
+        padding: 3px 0;
+        margin-bottom: 61px;
+    }
+
+    &__product-img {
+        max-width: 344px;
+        padding: 0 15px;
+        margin-bottom: 70px;
+    }
+
+    &__bullets {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;  
+    }
+
+    &__bullets-item {
+        padding: 4px;
+    }
+
+    &__bullets-icon {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+
+        &_purple {
+            background-color: $deep-purple;
+        }
+        
+        &_white {
+            background-color: $white;
+        }
+    
+        &_red {
+            background-color: $red;
+        }
+    
+        &_blue {
+            background-color: $light-blue;
+        }
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2,1.2);
+            border: 1px solid $soft-grey;
+            transition: all 0.2s ease-in-out;
+            
+        }
+    }
+    &__form-holder {
+        padding: 20px 35px 0 65px;
+    }
+
+    &__title-holder {
+        max-width: 200px;
+        padding: 18px 0;
+    }
+
+    &__title {
+        color: $light-grey;
+        font-family: $msr100;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        padding: 8px 0;
+    }
+
+    &__subtitle {
+        color: $light-grey;
+        font-family: $msr100;
+        font-size: 14px;
+        opacity: 0.54;
+        letter-spacing: 0.02em;
+    }
+    &__rate {
+        padding-bottom: 4px;
+    }
+
+    &__rate-mark {
+        color: $soft-grey;
+
+        &_yellow {
+            color: $yellow;
+        }
+    }
+
+    &__input-holder {
+        display: inline-flex;
+        position: relative;
+        padding: 18px 0;
+    }
+
+    &__input {
+        width: 70px;
+        height: 32px;
+        color: $soft-grey;
+        font-family: $msr100;
+        font-size: 14px;
+        background: transparent;
+        border: 1px solid $soft-grey;
+        outline: none;
+        appearance: none;
+        cursor: pointer;
+        padding: 0 14px;
+    }
+
+    &__button-holder {
+        padding: 12px 0;
+    }
+}
+
+.arrow {
+    position:absolute;
+    top: 43%;
+    right: 16px;
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid $soft-grey;
+    border-bottom: 1px solid $soft-grey;
+    transform: rotate(-45deg);
+}
+
+
+.rate {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.82);
+
+    &__input {
+    display: none;
+    
+    &:checked ~ label {
+    color: $yellow;
+    }
+    &:hover ~ label {
+    cursor: pointer;
+    color: $yellow;
+    }
+    }
+    
+    &__label {
+    color: $light-grey;
+    
+    &:before {
+    content: '★';
+    }
+    }
+    }
